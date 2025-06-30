@@ -168,6 +168,6 @@ python main.py
 - LangGraph Migration (Advanced Agents)
 
 ## 🧠 Author
-Built by [@DzenAutomations](https://linkedin.com/in/https://www.linkedin.com/in/debbhowmik/) to kickstart your Agentic AI journey.
+Built by [@DzenAutomations](https://www.linkedin.com/in/debbhowmik/) to kickstart your Agentic AI journey.
 
 ## ⭐ Star it if it helped you, fork it to build your own workspace assistant!
