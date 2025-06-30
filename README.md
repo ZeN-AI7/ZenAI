@@ -34,13 +34,13 @@ import os
 
 def run(file_name: str = "default.txt") -> str:
     if not os.path.isfile(file_name):
-        return f"❌ File '{file_name}' not found."
+        return f"File '{file_name}' not found."
     try:
         with open(file_name, "r") as f:
             content = f.read()
         return f"📄 Contents of '{file_name}':\n\n{content}"
     except Exception as e:
-        return f"❌ Error reading file '{file_name}': {str(e)}"
+        return f"Error reading file '{file_name}': {str(e)}"
 
 # Tasks/open_url.py
 import webbrowser
@@ -50,9 +50,9 @@ def run(url: str = "https://www.google.com") -> str:
         url = "https://" + url
     try:
         webbrowser.open(url)
-        return f"🌐 Opening {url} in your default browser."
+        return f"Opening {url} in your default browser."
     except Exception as e:
-        return f"❌ Failed to open URL: {str(e)}"
+        return f"Failed to open URL: {str(e)}"
 
 # Tasks/__init__.py
 ### empty file
@@ -91,7 +91,7 @@ if __name__ == "__main__":
             response = zen_agent(user_input)
             print(f"\n{response}\n")
         except Exception as e:
-            print(f"\n❌ Error: {str(e)}\n")
+            print(f"\nError: {str(e)}\n")
 
 # .env.example 
 ## Copy this file to .env and add your Google API key
